@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use App\Http\ViewComposers\ThemeComposer;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
@@ -13,10 +12,7 @@ class ComposerServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        View::composer(
-            '*',
-            ThemeComposer::class
-        );
+
     }
 
     /**
